@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "pingan.com.quarter_hour"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //fresco  依赖
+    //Rxjava    Retrofit依赖
+    //TabLayout 依赖
+
+    //侧拉
+    compile project(':flowingdrawer-core')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.hjm:BottomTabBar:1.1.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //视频播放控件
+    compile 'fm.jiecao:jiecaovideoplayer:4.8.3'
+    //侧拉销毁Activity
+    compile 'com.jude:swipebackhelper:3.1.2'
+    //条目依赖
+    compile 'com.leon:lsettingviewlibrary:1.7.0'
+
+}
