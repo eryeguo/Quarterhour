@@ -30,6 +30,11 @@ dependencies {
 
     //侧拉
     compile project(':flowingdrawer-core')
+    //视频播放控件
+    //侧拉销毁Activity
+    //条目依赖
+    
+
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.facebook.fresco:fresco:0.12.0'
@@ -44,13 +49,9 @@ dependencies {
     compile 'com.android.support:design:26.0.0-alpha1'
     compile 'com.hjm:BottomTabBar:1.1.1'
     compile 'com.nineoldandroids:library:2.4.0'
+    compile 'fm.jiecao:jiecaovideoplayer:4.8.3'
+    compile 'com.jude:swipebackhelper:3.1.2'
+    compile 'com.leon:lsettingviewlibrary:1.7.0'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    //视频播放控件
-    compile 'fm.jiecao:jiecaovideoplayer:4.8.3'
-    //侧拉销毁Activity
-    compile 'com.jude:swipebackhelper:3.1.2'
-    //条目依赖
-    compile 'com.leon:lsettingviewlibrary:1.7.0'
-
 }

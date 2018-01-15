@@ -1,10 +1,8 @@
 package pingan.com.quarter_hour.fragment.RecommendFragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +19,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import pingan.com.quarter_hour.R;
-import pingan.com.quarter_hour.acyivity.WebViewActivity;
 import pingan.com.quarter_hour.bean.BannerBean;
 import pingan.com.quarter_hour.bean.HotVideoBean;
 import pingan.com.quarter_hour.utils.BannerImageLoader;
@@ -82,9 +79,9 @@ public class FieryFragment extends Fragment implements HttpIview {
             banner.setOnBannerListener(new OnBannerListener() {
                 @Override
                 public void OnBannerClick(int position) {
-                    Intent intent = new Intent(getActivity(), WebViewActivity.class);
-                    intent.putExtra("webviewUrl", data.get(position).getUrl() + "");
-                    startActivity(intent);
+//                    Intent intent = new Intent(getActivity(), WebViewActivity.class);
+//                    intent.putExtra("webviewUrl", data.get(position).getUrl() + "");
+//                    startActivity(intent);
                 }
             });
 
